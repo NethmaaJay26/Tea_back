@@ -1,0 +1,110 @@
+.popular{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 80vh;
+    padding-top: 50px;
+
+}
+.popular h1{
+    color: #3d5e0b;
+    font-size: 42px;
+    font-weight: 600;
+    font-family: "Libre Baskerville", serif;
+
+}
+.popular hr{
+    width: 150px;
+    height: 2px;
+    border-radius: 10px;
+    background: #3d5e0b ;
+
+}
+.popular-item{
+    margin-top: 60px;
+    display: flex;
+    gap: 80px;
+}
+
+@media (max-width: 1280px) {
+    .popular {
+        height: 75vh;
+        padding-top: 40px;
+    }
+
+    .popular h1 {
+        font-size: 38px;
+    }
+
+    .popular hr {
+        width: 130px;
+    }
+
+    .popular-item {
+        margin-top: 50px;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .popular {
+        height: 60vh;
+        padding-top: 30px;
+    }
+
+    .popular h1 {
+        font-size: 34px;
+    }
+
+    .popular hr {
+        width: 110px;
+    }
+
+    .popular-item {
+        margin-top: 40px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .popular {
+        height: 90vh;
+        padding-top: 50px;
+    }
+
+    .popular h1 {
+        font-size: 30px;
+    }
+
+    .popular hr {
+        width: 90px;
+    }
+
+    .popular-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .popular {
+        height: 65vh;
+        padding-top: 20px;
+    }
+
+    .popular h1 {
+        font-size: 26px;
+    }
+
+    .popular hr {
+        width: 70px;
+    }
+
+    .popular-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}

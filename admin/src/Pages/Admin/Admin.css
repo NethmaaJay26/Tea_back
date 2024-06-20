@@ -1,0 +1,10 @@
+.admin{
+    display: flex;
+    background: url('../../assets/footer2.png');
+}
+
+@media(max-width:800px){
+    .admin{
+        flex-direction: column;
+    }
+}

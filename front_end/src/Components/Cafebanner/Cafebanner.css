@@ -1,0 +1,215 @@
+.cafebanner {
+    height: 60vh;
+    background: #b0cc86;
+    display: flex;
+    flex-direction: column;
+    color: #040404;
+    font-size: 15px;
+    justify-content: center;
+  }
+  
+  .cafebanner-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .cafebanner-left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 50px;
+    line-height: 1.1;
+    margin-left: 180px;
+  }
+  
+  .cafebanner-left p {
+    color: #4a730b;
+    font-size: 65px;
+    font-weight: 700;
+  }
+  
+  .cafe-banner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .cafe-banner img {
+    width: 100px;
+  }
+  
+  .para p {
+    color: #040404;
+    font-size: 17px;
+    font-family: "Crimson Text", serif;
+    font-style: italic;
+  }
+  
+  .cafe-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 30px;
+    height: 70px;
+    border-radius: 25px;
+    background: rgb(249, 249, 164);
+    color: #61852a;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 150px;
+  }
+  
+  .cafe-button img {
+    width: 30px;
+  }
+  
+  .cafebanner-center,
+  .cafebanner-right {
+    flex: 1;
+    height: 100%;
+  }
+  
+  .cafebanner-center img,
+  .cafebanner-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @media (max-width: 1280px) {
+    .cafebanner {
+        height: 55vh;
+    }
+
+    .cafebanner-left {
+        margin-left: 70px;
+        margin-right: 30px;
+    }
+
+    .cafe-banner p {
+        font-size: 55px;
+    }
+    .cafe-banner img{
+      width: 80px;
+    }
+    .para p{
+      font-size:18px;
+    }
+
+    .cafe-button {
+        height: 60px;
+        font-size: 20px;
+        width: 140px;
+    }
+
+    .cafe-button img {
+        width: 25px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cafebanner {
+        height: 50vh;
+    }
+
+    .cafebanner-left {
+        margin-left: 70px;
+    }
+    .cafebanner-left p{
+      font-size:52px ;
+    }
+
+    .cafe-banner p {
+      font-size: 45px;
+  }
+  .cafe-banner img{
+    width: 60px;
+  }
+  .para p{
+    font-size:14px;
+  }
+
+    .cafe-button {
+        height: 55px;
+        font-size: 18px;
+        width: 130px;
+    }
+
+    .cafe-button img {
+        width: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .cafebanner {
+        height: 45vh;
+    }
+
+    .cafebanner-left {
+        margin-left: 0;
+        padding-right: 20px;
+    }
+    .cafebanner-left p{
+      font-size:45px ;
+    }
+    .cafe-banner p {
+      font-size: 45px;
+  }
+  .cafe-banner img{
+    width: 60px;
+  }
+  .para p{
+    font-size:13px;
+  }
+
+
+    .cafe-button {
+        height: 50px;
+        font-size: 16px;
+        width: 120px;
+    }
+
+    .cafe-button img {
+        width: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .cafebanner {
+        height: 40vh;
+    }
+
+    .cafebanner-left {
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+    .cafebanner-left p{
+      font-size: 35px;
+    }
+
+    .cafe-banner p {
+      font-size: 35px;
+  }
+  .cafe-banner img{
+    width: 45px;
+  }
+  .para p{
+    display: none;
+  }
+    .cafe-button {
+        height: 45px;
+        font-size: 14px;
+        width: 110px;
+    }
+
+    .cafe-button img {
+        width: 16px;
+    }
+
+}
+  

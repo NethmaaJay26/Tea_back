@@ -1,0 +1,178 @@
+
+.banner{
+    height: 70vh;
+    background: url('../Assets/banner11.jpg') no-repeat center center/cover;
+    /*background: linear-gradient(180deg, #effbdd ,#a1d257 80%);*/
+    display: flex;
+}
+.banner-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    padding-left: 110px;
+    line-height: 1.1;
+}
+.banner-left h2{
+    color: #4d4d4d;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: "Libre Baskerville", serif;
+}
+.banner-left p{
+    color: #4d4d4d;
+    font-size: 75px;
+    font-weight: 700;
+}
+.home-banner{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.home-banner img{
+    width: 110px;
+}
+.latest-button{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    gap: 20px;
+    height: 70px;
+    border-radius: 25px;
+    margin-top: 35px;
+    background: #e8f4d7;
+    color: #61852a;
+    font-size: 22px;
+    font-weight: 500;
+    width: 370px;
+    cursor: pointer;
+    
+   
+}
+.latest-button img{
+    width: 40px;
+}
+@media (max-width: 1280px) {
+    .banner-left {
+        padding-left: 90px;
+    }
+
+    .banner-left h2 {
+        font-size: 26px;
+    }
+
+    .banner-left p {
+        font-size: 65px;
+    }
+
+    .latest-button {
+        width: 340px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .latest-button img {
+        width: 35px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .banner {
+        height: 60vh;
+    }
+
+    .banner-left {
+        padding-left: 70px;
+    }
+    .home-banner img{
+        width: 80px;
+    }
+
+    .banner-left h2 {
+        font-size: 24px;
+    }
+
+    .banner-left p {
+        font-size: 55px;
+    }
+
+    .latest-button {
+        width: 320px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .latest-button img {
+        width: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .banner {
+        height: 50vh;
+    }
+
+    .banner-left {
+        padding-left: 50px;
+        gap: 20px;
+    }
+    .home-banner img{
+        width: 60px;
+    }
+
+    .banner-left h2 {
+        font-size: 22px;
+    }
+
+    .banner-left p {
+        font-size: 45px;
+    }
+
+    .latest-button {
+        width: 260px;
+        height: 45px;
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .latest-button img {
+        width: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner {
+        height: 40vh;
+        background-size: cover;
+    }
+
+    .banner-left {
+        padding-left: 20px;
+        gap: 15px;
+    }
+
+    .home-banner img{
+        width: 50px;
+    }
+
+    .banner-left h2 {
+        font-size: 20px;
+    }
+
+    .banner-left p {
+        font-size: 35px;
+    }
+
+    .latest-button {
+        width: 220px;
+        height: 40px;
+        font-size: 14px;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .latest-button img {
+        width: 20px;
+    }
+}

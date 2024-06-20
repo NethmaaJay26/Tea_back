@@ -1,0 +1,194 @@
+.banner2{
+    height: 60vh;
+    background: url('../Assets/footer2.png');
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 180px;
+    padding-right: 180px;
+    line-height: 1.1;
+    align-items: center;
+}
+
+.banner2 h2{
+    color: #60832b;
+    font-size: 45px;
+    font-weight: 600;
+    display: flex;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-right: 180px;
+    padding-left: 180px;
+    font-family: "Libre Baskerville", serif;
+}
+
+.banner2 hr{
+    width: 200px;
+    height: 2px;
+    border-radius: 10px;
+    background: #60832b ;
+    justify-content: center;
+}
+
+.point1{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-top: 50px;
+}
+
+.point1 h1{
+    color: #507a12;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Libre Baskerville", serif;
+}
+
+.point1 img{
+    width: 70px;
+}
+.point1 p{
+    color: #486025;
+    font-size: 25px;
+    font-weight: 500;
+    padding-left: 15px;
+    font-family: "Libre Baskerville", serif;
+    font-style: italic;
+    
+}
+@media (max-width: 1280px) {
+    .banner2 {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .banner2 h2 {
+        font-size: 40px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    .point1 {
+        flex-direction: column;
+        padding-top: 1px;
+        gap: 5px;
+    }
+
+    .point1 h1 {
+        font-size: 28px;
+    }
+
+    .point1 p {
+        font-size: 23px;
+    }
+
+    .point1 img {
+        width: 60px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .banner2 {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .banner2 h2 {
+        font-size: 36px;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    .point1 {
+        flex-direction: column;
+        padding-top: 1px;
+        gap: 5px;
+    }
+
+    .point1 h1 {
+        font-size: 26px;
+    }
+
+    .point1 p {
+        font-size: 19px;
+    }
+
+    .point1 img {
+        width: 55px;
+    }
+}
+
+@media (max-width: 800px) {
+    .banner2 {
+        height: 50vh;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .banner2 h2 {
+        font-size: 30px;
+        padding-left: 50px;
+        padding-right: 80px;
+    }
+    .banner2 hr{
+        margin-bottom: 10px;
+
+    }
+
+    .point1 {
+        flex-direction: column;
+        padding-top: 1px;
+        gap: 5px;
+    }
+
+    .point1 h1 {
+        font-size: 23px;
+    }
+
+    .point1 p {
+        font-size: 16px;
+        padding-left: 0;
+    }
+
+    .point1 img {
+        width: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner2 {
+        height: 42vh;
+        margin-top: 160px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .banner2 hr{
+        width:80px;
+    }
+
+    .banner2 h2 {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .point1 {
+        flex-direction: column;
+        padding-top: 1px;
+        gap: 1px;
+    }
+
+    .point1 h1 {
+        font-size: 18px;
+    }
+
+    .point1 p {
+        font-size: 14px;
+        padding-left: 0;
+    }
+
+    .point1 img {
+        width: 40px;
+    }
+}
+
