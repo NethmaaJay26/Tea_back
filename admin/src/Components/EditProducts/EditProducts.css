@@ -1,0 +1,87 @@
+.edit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px 50px;
+    margin: 20px 50px;
+    padding-top: 50px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edit-container h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: #333;
+  }
+  
+  .edit-container form {
+    width: 100%;
+  }
+  
+  .edit-container label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .edit-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    gap: 10px;
+  }
+
+  .editproduct-selector {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    color: #7b7b7b;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.editproduct-image{
+    width: 100px;
+}
+  
+  .edit-container button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  
+  .edit-container button:hover {
+    background-color: #45a049;
+  }
+  
+
+  @media (max-width: 600px) {
+    .edit-container {
+      padding: 15px;
+    }
+  
+    .edit-container h2 {
+      font-size: 20px;
+    }
+  
+    .edit-container button {
+      width: 100%;
+    }
+  }
+  

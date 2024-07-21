@@ -114,7 +114,8 @@
 
 @media (max-width: 1024px) {
     .cafebanner {
-        height: 50vh;
+        height: 60vh;
+        
     }
 
     .cafebanner-left {
@@ -147,7 +148,7 @@
 
 @media (max-width: 800px) {
     .cafebanner {
-        height: 45vh;
+        height: 50vh;
     }
 
     .cafebanner-left {

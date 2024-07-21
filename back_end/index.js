@@ -129,6 +129,43 @@ app.post('/removeproduct',async(req,res)=>{
         name:req.body.name
     })
 })
+//API for Edit Product
+app.put('/editproduct/:id', Uploads.single('image'), async (req, res) => {
+    const { id } = req.params;
+    const { name, price, category } = req.body;
+    
+    const image = req.file ? `http://localhost:${port}/images/${req.file.filename}` : req.body.image;
+
+    try {
+        
+        const updatedProduct = await Product.findOneAndUpdate(
+            { id: id },
+            { name, price, category, image },
+            { new: true, runValidators: true } 
+        );
+        
+        if (updatedProduct) {
+            console.log("Product Updated");
+            res.json({
+                success: true,
+                product: updatedProduct
+            });
+        } else {
+            res.status(404).json({
+                success: false,
+                message: 'Product not found'
+            });
+        }
+    } catch (error) {
+        console.error("Error updating product:", error);
+        res.status(500).json({
+            success: false,
+            message: 'Error updating product',
+            error
+        });
+    }
+});
+
 
 // API for getting all products
 app.get('/allproducts',async (req,res)=>{

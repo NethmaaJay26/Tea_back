@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -11,8 +12,19 @@ import Tea_banner from './Components/Assets/banner12.jpg';
 import Teawares_banner from './Components/Assets/banner00.png';
 import Gifts_banner from './Components/Assets/banner7.png';
 import Cafe_banner from './Components/Assets/banner10.jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false, 
+      mirror: true,
+    });
+  }, []);
+
+  
   return (
     <div>
       <BrowserRouter>
